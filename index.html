@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Каталог моніторів</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalog {
+    display: flex;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.card {
+    width: 25%;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #7cb342;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.badge.blue {
+    right: 15px;
+    left: auto;
+    background: #2196f3;
+}
+
+.category {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.image-box {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ВАЖЛИВО — щоб всі монітори були однакові */
+.image-box img {
+    max-height: 160px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.title {
+    font-weight: bold;
+    color: #0077cc;
+    margin: 15px 0;
+}
+
+.price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btn {
+    background: #f1e500;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.btn.disabled {
+    background: #e91e63;
+    color: white;
+    pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ОБОВ'ЯЗКОВО ДОДАЙТЕ СВОЄ ЗАМОВЛЕННЯ</h1>
+
+<div class="catalog">
+
+<!-- 1 -->
+<div class="card">
+    <div class="badge">НОВИНКА</div>
+    <div class="category">МОНІТОРИ</div>
+
+    <div class="image-box">
+        <img src="img/monitor1.webp" alt="Samsung Odyssey G5">
+    </div>
+
+    <div class="title">Samsung Odyssey G5</div>
+
+    <div class="price">—</div>
+
+    <a class="btn disabled">НЕЗАБАРОМ У ПРОДАЖІ</a>
+</div>
+
+<!-- 2 -->
+<div class="card">
+    <div class="category">МОНІТОРИ</div>
+
+    <div class="image-box">
+        <img src="img/monitor2.webp" alt="LG 27MP60G-B">
+    </div>
+
+    <div class="title">LG 27MP60G-B</div>
+
+    <div class="price">
+        <span class="old-price">8000 грн</span> 7200 грн
+    </div>
+
+    <a href="https://rozetka.com.ua/ua/lg_27mp60g_b/p297927925/" target="_blank" class="btn">
+        У КОРЗИНУ
+    </a>
+</div>
+
+<!-- 3 -->
+<div class="card">
+    <div class="badge blue">ХІТ ПРОДАЖІВ</div>
+    <div class="category">МОНІТОРИ</div>
+
+    <div class="image-box">
+        <img src="img/monitor3.webp" alt="AOC 24G2SPU">
+    </div>
+
+    <div class="title">AOC 24G2SPU</div>
+
+    <div class="price">6500 грн</div>
+
+    <a href="https://rozetka.com.ua/ua/aoc_24g2spu_bk/p259453975/" target="_blank" class="btn">
+        У КОРЗИНУ
+    </a>
+</div>
+
+<!-- 4 -->
+<div class="card">
+    <div class="badge blue">ХІТ ПРОДАЖІВ</div>
+    <div class="category">МОНІТОРИ</div>
+
+    <div class="image-box">
+        <img src="img/monitor4.webp" alt="Dell P2422H">
+    </div>
+
+    <div class="title">Dell P2422H</div>
+
+    <div class="price">9000 грн</div>
+
+    <a href="https://rozetka.com.ua/ua/dell_p2422h/p318804565/" target="_blank" class="btn">
+        У КОРЗИНУ
+    </a>
+</div>
+
+</div>
+
+</body>
+</html>
